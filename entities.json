@@ -1,0 +1,86 @@
+{
+    "Classes":[
+
+        {
+            "Name" : "Actor",
+            "Extend" : "DomainEntity",
+            "Properties": [
+                {
+                    "Name" : "name",
+                    "Type" : "String",
+                    "Constraint" : ["@NotBlank"],
+                    "Display" : true
+                },
+                {
+                    "Name" : "middleName",
+                    "Type" : "String",
+                    "Constraint" : [],
+                    "Display" : true
+                },
+                {
+                    "Name" : "surname",
+                    "Type" : "String",
+                    "Constraint" : ["@NotBlank"],
+                    "Display" : true
+                },
+                {
+                    "Name" : "photo",
+                    "Type" : "String",
+                    "Constraint" : ["@URL"],
+                    "Display" : false
+                },
+                {
+                    "Name" : "email",
+                    "Type" : "String",
+                    "Constraint" : ["@NotBlank","@URL"],
+                    "Display" : true
+                },
+                {
+                    "Name" : "phone",
+                    "Type" : "String",
+                    "Constraint" : [],
+                    "Display" : true
+                },
+                {
+                    "Name" : "address",
+                    "Type" : "String",
+                    "Constraint" : [],
+                    "Display" : true
+                }
+            ]
+
+        },
+        {
+            "Name" : "Message",
+            "Extend" : "DomainEntity",
+            "Properties": [
+                {
+                    "Name" : "sendDate",
+                    "Type" : "Date",
+                    "Constraint" : ["@Past"],
+                    "Display" : true
+                },{
+                    "Name" : "subject",
+                    "Type" : "String",
+                    "Constraint" : ["@NotBlank"],
+                    "Display" : true
+                },{
+                    "Name" : "body",
+                    "Type" : "String",
+                    "Constraint" : ["@NotBlank"],
+                    "Display" : true
+                },{
+                    "Name" : "topic",
+                    "Type" : "String",
+                    "Constraint" : ["@NotBlank"],
+                    "Display" : true
+                }
+                
+            ]
+
+        }
+
+    ]
+
+
+}
