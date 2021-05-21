@@ -1,0 +1,6 @@
+- robot_name: [Parejitas]
+- pose:
+  - [100, 50, 20]
+- side: [Amarillo]
+- mode: [Compe]
+- routines: [Rutinas por definir]
